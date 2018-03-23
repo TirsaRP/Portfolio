@@ -1,76 +1,104 @@
-
-header{
+#home{
     background-color:rgb(31,31,31);
     text-align:center;
-    color:white;
+    color:white;  
+    padding:5%; 
 }
-
+#nav{
+    display:none;
+}
 .me {
     border-radius:50%;
     width:60%;
 }
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:2em;
-    padding:20px;
 }
 h2{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align:center;
-    font-size:1.5em;
     background-color:rgb(31,31,31);
     color:white;
-    padding:10px;
-}
-
-.container{
-    background-color:#adacaf;
+    padding:2%;
 }
 .grid{background-color:#adacaf;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:space-around;
 }
-
 .grid-item{
     background-color:whitesmoke;
     border:black solid;
     text-align:center;
     min-height:250px;
-    margin:15px;
-    padding:0px 10px;
+    margin:5% 2%;
+    
 }
-
 img{
-    width:180px;
-    margin-top:10px;
+    width:70%;
+    margin-top:5%;
 }
-
-
 ul{
     list-style: none;
 }
 
 @media screen and (min-width:600px){
-.me{
-    width:50%;
-    }
-h1{
-    font-size:3em;
-}
-h2{
-    font-size:2em;
-}
-}
 
-@media screen and (min-width:900px){
-.me{width:25%;
+    body{
+        display:grid;
+        grid-template-columns: 30% 70%;
+        grid-template-row:auto auto auto auto;
+        margin:0px;
     }
-h1{
-    font-size:4em;
-}
-h2{
-    font-size:3em;
-}
+    #home{
+        grid-area:1/1/5/2;
+    }
+    #nav{
+        grid-area: 1/2/2/4;  
+        display:inline;
+        text-align:center;
+        background-color:#adacaf;
+    }
+    #nav ul{
+   
+    }
+    #nav li{
+        display:inline;
+        font-size:1.5em;
+        padding:0% 2%;
+        margin:3%;
+        border:solid;
+        background-color:rgb(31,31,31);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    #prototype{
+        grid-area:2/2/3/3;
+    }
+    #testing{
+        grid-area:3/2/3/4;
+    }
+    #product{
+        grid-area:4/2/4/4;
+    }
+    .grid{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-around;
+    }
+
+    .grid-item{
+        width:35%;
+    }
+
+    h1{
+    font-size:2.5em;
+    }
+    h2{
+    font-size:2em;
+    }
+    p{
+        font-size:1.5em;
+    }
 }
