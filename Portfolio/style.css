@@ -29,7 +29,7 @@ h2{
     text-align:center;
     min-height:250px;
     margin:5% 2%;
-    
+    white-space: wrap; 
 }
 img{
     width:70%;
@@ -38,13 +38,16 @@ img{
 ul{
     list-style: none;
 }
+p{
+    font-family: 'Gudea', sans-serif;
+}
 
 @media screen and (min-width:600px){
 
     body{
         display:grid;
         grid-template-columns: 30% 70%;
-        grid-template-row:auto auto auto auto;
+        grid-template-rows:auto auto auto auto;
         margin:0px;
     }
     #home{
@@ -52,24 +55,29 @@ ul{
     }
     #home p{
         text-align:left;
+        font-family: 'Gudea', sans-serif;
+        line-height: 1.8;
     }
     #nav{
         grid-area: 1/2/2/4;  
         display:inline;
         text-align:center;
         background-color:#adacaf;
+        padding-bottom: 2%;
     }
     #nav ul{
    
     }
     #nav li{
         display:inline;
-        font-size:1.5em;
+        font-size:1.75em;
         padding:0% 2%;
-        margin:3%;
+        margin:5%;
         border:solid;
         background-color:rgb(31,31,31);
         font-family:Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 8px;
+        box-shadow: 10px 10px #888888;
     }
     a{
         text-decoration: none;
@@ -93,13 +101,19 @@ ul{
 
     .grid-item{
         width:35%;
+        box-shadow: 5px 10px #888888;
+        font-family: 'Gudea', sans-serif;
     }
 
     h1{
-    font-size:2.5em;
+    font-size:3.5em;
+    font-family: 'Racing Sans One', cursive;
+   
     }
     h2{
-    font-size:2em;
+    font-size:2.25em;
+    font-family: 'Merriweather Sans', sans-serif;
+    letter-spacing: 3px;
     }
     p{
         font-size:1.5em;
