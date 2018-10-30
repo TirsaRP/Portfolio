@@ -1,0 +1,121 @@
+#home{
+    background-color:rgb(31,31,31);
+    text-align:center;
+    color:white;  
+    padding:5%; 
+}
+#nav{
+    display:none;
+}
+.me {
+    border-radius:50%;
+    width:60%;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
+    background-color:rgb(31,31,31);
+    color:white;
+    padding:2%;
+}
+.grid{background-color:#adacaf;
+}
+.grid-item{
+    background-color:whitesmoke;
+    border:black solid;
+    text-align:center;
+    min-height:250px;
+    margin:5% 2%;
+    white-space: wrap; 
+}
+img{
+    width:70%;
+    margin-top:5%;
+}
+ul{
+    list-style: none;
+}
+p{
+    font-family: 'Gudea', sans-serif;
+}
+
+@media screen and (min-width:600px){
+
+    body{
+        display:grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows:auto auto auto auto;
+        margin:0px;
+    }
+    #home{
+        grid-area:1/1/5/2;
+    }
+    #home p{
+        text-align:left;
+        font-family: 'Gudea', sans-serif;
+        line-height: 1.8;
+    }
+    #nav{
+        grid-area: 1/2/2/4;  
+        display:inline;
+        text-align:center;
+        background-color:#adacaf;
+        padding-bottom: 2%;
+    }
+    #nav ul{
+   
+    }
+    #nav li{
+        display:inline;
+        font-size:1em;
+        padding:0% 2%;
+        margin:5%;
+        border:solid;
+        background-color:rgb(31,31,31);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 8px;
+        box-shadow: 10px 10px #888888;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    #prototype{
+        grid-area:2/2/3/3;
+    }
+    #testing{
+        grid-area:3/2/3/4;
+    }
+    #product{
+        grid-area:4/2/4/4;
+    }
+    .grid{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-around;
+    }
+
+    .grid-item{
+        width:35%;
+        box-shadow: 5px 10px #888888;
+        font-family: 'Gudea', sans-serif;
+    }
+
+    h1{
+    font-size:2em;
+    font-family: 'Racing Sans One', cursive;
+   
+    }
+    h2{
+    font-size:1.5em;
+    font-family: 'Merriweather Sans', sans-serif;
+    letter-spacing: 3px;
+    }
+    p{
+        font-size:1.25em;
+    }
+}
