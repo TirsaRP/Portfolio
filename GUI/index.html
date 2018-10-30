@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <meta charset="utf-8">
+  <title>portfolio page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|IBM+Plex+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="wrapper">
+    <h2>Tirsa Ramos-Pedersen &nbsp & Richard Modecir Soto <br></h2>
+  </header>
+  <div class="wrapper">
+    <div class="row">
+      <div class="column">
+        <h1>Analysis</h1>
+        <p>
+          We chose the <em>PCalc Lite</em> app running on an iPhone X to redesign for one-handed use. The app is difficult to interact with when using one hand, due to the
+          size and layout of the screen and buttons. <br><br> Scott Hurff’s heat map of thumb zones superimposed
+          over the phone images, depict how difficult it is to reach the function keys towards the top of the screen. They
+          are in what Hurff describes as the “ow” zone. <br><br> The iPhone X does have a “reachability” feature. However,
+          its affordance is hidden and hard to access during one-handed use. When accessing this reachability feature, the
+          user may have to attempt 2-3 times before it gets initiated due to the area of interactivity being small and very
+          close to the bottom edge of the phone. Once the top of the display is lowered, the user needs to push it back up
+          in order to resume using (the functionality of) the calculator.
+        </p>
+        <p>
+          <a href="http://scotthurff.com/posts/how-to-design-for-thumbs-in-the-era-of-huge-screens" target="_blank">Scott
+            Hurff Thumb Zones</a>
+          <br>
+          <br>
+          <a href="https://dribbble.com/shots/4958110-Thumb-Zone-Heat-Map-for-iPhone-X" target="_blank">iPhone X thumb zone
+            map
+          </a>
+
+        </p>
+      </div>
+      <div class="column">
+        <img class="onecolumn" id="original" src="first_image.png" alt="Pcalc Lite screenshot">
+      </div>
+    </div>
+    <h1>Sketching</h1>
+    <div class="row">
+      <p>
+        <strong>Issue:</strong >&nbsp; Tall buttons that fill up the entire screen make it harder to reach the buttons towards the top.
+        <br> 
+        <strong>Possible Solution:</strong> &nbsp; Change the shape of the buttons from tall rectangles to square or circle buttons.
+        <br>
+        <br>
+        <img  src="ButtonShape.jpg" id="sketchImage1" width="45%" >
+        
+        <br> 
+        <strong>Issue:</strong> &nbsp;Apple’s reachability feature isn’t obvious (hidden affordance) and hard to activate, even when the user knows how to do so.
+        <br> <br>
+        <strong>Possible Solution:</strong> &nbsp; Our first redesign concept (two screenshots below) shrunk the rectangular buttons down to squares and added a visible
+        button to activate resizing. The button was within the stretching zone (reachable) and didn’t replace any existing
+        buttons, thus preserving the calculator’s functionality.  
+        <br><br>
+        Our second design acknowledges there’s no need for a resizing
+        button if the calculator’s buttons are located within Hurff’s natural and stretching zones as default, allowing the
+        user to use the app comfortably with one hand. 
+        <br>
+        <img src="displayOptions.jpg" id="sketchImage2" width="48%">
+        <img src="buttonLocation.jpg" id="sketchImage3" width="50%"> 
+        <br><br><br>
+        <img src="arrowButton1.jpg" id="sketchImage4" width="48%">
+        <img src="arrowButton2.jpg" id="sketchImage5" width="48%">
+        <br><br>
+        <img src="second_image.png" id="redesignLarge" width="25%">
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <img src="third_image.png" id="sketchImage6" width="25%">
+        <br><br><br>
+        <strong>Issue:</strong >&nbsp; Too many buttons on the display 
+        <br> <br>
+        <strong>Possible Solution:</strong> &nbsp; Instead
+        of having many buttons displayed at once, add a button that will allow the user to access more advanced functions.
+        Once a function is chosen, the user should be taken back to the default screen automatically so (s)he doesn’t have
+        to take the extra step of pushing another button to get back to the calculation.
+        <br>
+        <img src="RichardDesign.jpg" id="richardDesign" width="48%">
+        <img src="finalDesignSketch.jpg" id="finalDesignSketch" width="48%">
+      </p>
+    </div>
+    <div class="row">
+      <img class="sketch" src="./img/sketch1.jpg" alt="">
+      <img class="sketch" src="./img/sketch2.jpg" alt="">
+    </div>
+    <div class="row">
+      <div class="column">
+        <h1>Re-design</h1>
+        <p>
+          We created a calculator app that addresses the issues we found in the original <em>PCalc Lite</em> design. 
+          With our first redesign we constrained ourselves to stay as close to the original design as possible.
+          This is because it provided the user many affordances and already followed Apple's design guidelines. 
+          However, with our second design, we diverged further from the first redesign concept.
+          <br>
+            <a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/" target="_blank" >Apple Design Guidelines</a>
+          <br>
+        </p>
+        <p>
+          We reshaped the buttons into squares so they don’t fill the screen and placed the majority of the keys in Hurff’s “ow”-free zone, 
+          which eliminated the need for a “reachability” feature. We decided to place the most common calculator functions on the default screen, 
+          providing the user with a button that allows them to access more complex function keys if needed. 
+          Once the user has selected the function key in the second screen, they are automatically sent back to the first page to access the numbers. 
+          Not having to push a button to go back to the default screen provides the user an uninterrupted experience. 
+          There is a scrolling log of the user's calculations under the display panel so s(he) will be able to review their previous calculations. 
+          <br>
+          <br>
+          <img src="last_image.png" id="sketchImage7" width="40%">
+        </p>
+      </div>
+      <div class="column">
+        <iframe class="iframe" style="border: none;" width="100%" height="100%"  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FJMnolYY1lQk2RYvRpdGICx%2FCalc-Project-2.0-Copy%3Fnode-id%3D4%253A0%26scaling%3Dscale-down" 
+        allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

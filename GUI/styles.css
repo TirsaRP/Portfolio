@@ -1,0 +1,62 @@
+@font-face {
+  font-family: generousDEMO;
+  src: url(generousDEMO.otf);
+}
+
+
+h1{
+  font-family: monospace;
+  font-size: 3em;
+  margin: 0;
+}
+h2{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5em;
+  font-style: italic;
+  padding-left: 10px;
+}
+
+p{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.5em;
+  display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.row {
+    display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 10px;
+}
+
+.onecolumn{
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+.iframe {
+  -webkit-margin-after: 0em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-end: 0px;
+  -webkit-margin-start: 0px;
+}
+
+.sketch{
+  float: left;
+  height: 50%;
+  margin: 0 0 1em;
+  width: 50%;
+}
